@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
-import { NavigationMenu } from "@/components/ui/navigation-menu";
 
 const Index = () => {
   return (
@@ -12,8 +11,8 @@ const Index = () => {
       {/* Hero Section */}
       <main className="relative">
         {/* Background image - we'll use a semi-transparent overlay */}
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/0f23861a-70f7-492b-959f-ea7758f31e10.png')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/743a9e5f-8a77-43f1-a421-0ab8e43c5095.png')] bg-cover bg-center">
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         {/* Content */}
@@ -23,36 +22,28 @@ const Index = () => {
             <img 
               src="/lovable-uploads/a6424192-2147-4502-9bc9-8fe2a87a7601.png"
               alt="AFFC Logo"
-              className="mx-auto w-64 md:w-80"
+              className="mx-auto w-48 md:w-64 lg:w-80"
             />
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gray-900">Africa Female</span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-white">Africa Female</span>
             <br />
             <span className="text-[#91C3E6]">Founders Collective</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto mb-12">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto mb-12">
             Powering the visibility, investability, and scalability of Africa's female-led ventures.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white px-8 py-6 text-lg"
-            >
-              Find Out More
-            </Button>
-            <Button 
-              variant="outline"
-              className="bg-white/90 hover:bg-white text-gray-800 px-8 py-6 text-lg border-2"
-            >
-              Visit Our Data Center
-            </Button>
-          </div>
+          {/* Single CTA Button */}
+          <Button 
+            className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white px-8 py-6 text-lg min-w-[200px]"
+          >
+            Coming Soon
+          </Button>
         </div>
       </main>
     </div>

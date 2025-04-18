@@ -1,15 +1,18 @@
 
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="bg-white/95 sticky top-0 z-50 border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +26,19 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Navigation Links */}
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6 text-gray-700" />
+            ) : (
+              <Menu className="h-6 w-6 text-gray-700" />
+            )}
+          </button>
+
+          {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-gray-700 hover:text-gray-900">Publications</a>
             <a href="#" className="text-gray-700 hover:text-gray-900">AFFC Café</a>
@@ -43,6 +58,20 @@ const Navbar = () => {
             <a href="#" className="text-gray-700 hover:text-gray-900">Female Founder Monitor</a>
             <a href="#" className="text-gray-700 hover:text-gray-900">About</a>
             <Button className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white">
+              Newsletter
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} py-2`}>
+          <div className="flex flex-col space-y-4 pb-4">
+            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Publications</a>
+            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">AFFC Café</a>
+            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Resources</a>
+            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Female Founder Monitor</a>
+            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">About</a>
+            <Button className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white w-full">
               Newsletter
             </Button>
           </div>
