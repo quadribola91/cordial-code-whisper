@@ -1,8 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
+import { useBackgroundImage } from "@/hooks/useBackgroundImage";
 
 const Index = () => {
+  const { backgroundImage } = useBackgroundImage('/your-local-image.jpg');
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
@@ -11,7 +14,10 @@ const Index = () => {
       {/* Hero Section */}
       <main className="relative">
         {/* Background image - we'll use a semi-transparent overlay */}
-        <div className="absolute inset-0 bg-[url('/your-local-image.jpg')] bg-cover bg-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
