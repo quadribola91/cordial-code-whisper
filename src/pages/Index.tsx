@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useBackgroundImage } from "@/hooks/useBackgroundImage";
 
 const Index = () => {
-  const { backgroundImage } = useBackgroundImage('/your-local-image.jpg');
+  const { backgroundImage } = useBackgroundImage('/lovable-uploads/3a500f99-0b22-4b06-8b0b-8a692c01fe14.png');
 
   return (
     <div className="min-h-screen bg-white">
@@ -13,12 +13,13 @@ const Index = () => {
       
       {/* Hero Section */}
       <main className="relative">
-        {/* Background image - we'll use a semi-transparent overlay */}
+        {/* Background image - with lighter overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* Lighter overlay - using white with higher opacity */}
+          <div className="absolute inset-0 bg-white/70"></div>
         </div>
 
         {/* Content */}
