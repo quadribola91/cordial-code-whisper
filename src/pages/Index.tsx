@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useBackgroundImage } from "@/hooks/useBackgroundImage";
 
 const Index = () => {
-  const { backgroundImage } = useBackgroundImage('/lovable-uploads/3a500f99-0b22-4b06-8b0b-8a692c01fe14.png');
+  const { backgroundImage } = useBackgroundImage('/header_img.png');
 
   return (
     <div className="min-h-screen bg-white">
