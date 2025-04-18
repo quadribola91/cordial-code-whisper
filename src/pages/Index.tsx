@@ -47,7 +47,7 @@ const Index = () => {
 
           {/* Single CTA Button */}
           <Button 
-            className="bg-[#9bbfe0] hover:bg-[#7AB0D3] text-white px-8 py-6 text-lg min-w-[200px]"
+            className="bg-[#9bbfe0] hover:bg-[#7AB0D3] text-white px-9 py-8 text-lg min-w-[200px]"
           >
             Coming Soon
           </Button>
