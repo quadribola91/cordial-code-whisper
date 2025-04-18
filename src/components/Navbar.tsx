@@ -40,23 +40,23 @@ const Navbar = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-gray-900">Publications</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">AFFC Café</a>
+            <a href="#" className="text-black hover:text-black">Publications</a>
+            <a href="#" className="text-black hover:text-black">AFFC Café</a>
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">Resources</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="text-black hover:text-black">Resources</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="p-4 w-48">
-                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 1</a>
-                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 2</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-text-black">Resource 1</a>
+                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-text-black">Resource 2</a>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <a href="#" className="text-gray-700 hover:text-gray-900">Female Founder Monitor</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">About</a>
+            <a href="#" className="text-black hover:text-black">Female Founder Monitor</a>
+            <a href="#" className="text-black hover:text-black">About</a>
             <Button className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white">
               Newsletter
             </Button>
@@ -66,11 +66,11 @@ const Navbar = () => {
         {/* Mobile menu */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} py-2`}>
           <div className="flex flex-col space-y-4 pb-4">
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Publications</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">AFFC Café</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Resources</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">Female Founder Monitor</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-2">About</a>
+            <a href="#" className="text-black hover:text-gray-900 px-2">Publications</a>
+            <a href="#" className="text-black hover:text-gray-900 px-2">AFFC Café</a>
+            <a href="#" className="text-black hover:text-gray-900 px-2">Resources</a>
+            <a href="#" className="text-black hover:text-gray-900 px-2">Female Founder Monitor</a>
+            <a href="#" className="text-black hover:text-gray-900 px-2">About</a>
             <Button className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white w-full">
               Newsletter
             </Button>
