@@ -19,7 +19,7 @@ const Index = () => {
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           {/* Lighter overlay - using white with higher opacity */}
-          <div className="absolute inset-0 bg-white/70"></div>
+          <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
         {/* Content */}
@@ -29,25 +29,25 @@ const Index = () => {
             <img 
               src="/lovable-uploads/a6424192-2147-4502-9bc9-8fe2a87a7601.png"
               alt="AFFC Logo"
-              className="mx-auto w-48 md:w-64 lg:w-80"
+              className="mx-auto w-48 md:w-64 lg:w-80 bg-[#9bbfe0]"
             />
           </div>
 
           {/* Title */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-white">Africa Female</span>
+            <span className="text-black">Africa Female</span>
             <br />
-            <span className="text-[#91C3E6]">Founders Collective</span>
+            <span className="text-[#9bbfe0]">Founders Collective</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto mb-12">
+          <p className="text-lg md:text-xl lg:text-2xl text-black/90 max-w-3xl font-medium mx-auto mb-12">
             Powering the visibility, investability, and scalability of Africa's female-led ventures.
           </p>
 
           {/* Single CTA Button */}
           <Button 
-            className="bg-[#91C3E6] hover:bg-[#7AB0D3] text-white px-8 py-6 text-lg min-w-[200px]"
+            className="bg-[#9bbfe0] hover:bg-[#7AB0D3] text-white px-8 py-6 text-lg min-w-[200px]"
           >
             Coming Soon
           </Button>
