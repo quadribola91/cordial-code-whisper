@@ -11,7 +11,7 @@ const Index = () => {
       {/* Hero Section */}
       <main className="relative">
         {/* Background image - we'll use a semi-transparent overlay */}
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/743a9e5f-8a77-43f1-a421-0ab8e43c5095.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-[url('/your-local-image.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
