@@ -29,7 +29,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/a6424192-2147-4502-9bc9-8fe2a87a7601.png"
               alt="AFFC Logo"
-              className="mx-auto w-48 md:w-64 lg:w-80 bg-[#9bbfe0]"
+              className="mx-auto w-48 md:w-64 lg:w-80"
             />
           </div>
 
