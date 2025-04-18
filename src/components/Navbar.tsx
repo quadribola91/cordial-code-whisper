@@ -48,8 +48,7 @@ const Navbar = () => {
                   <NavigationMenuTrigger className="text-black hover:text-black">Resources</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="p-4 w-48">
-                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-text-black">Resource 1</a>
-                      <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-text-black">Resource 2</a>
+                  
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
