@@ -19,7 +19,7 @@ const Index = () => {
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           {/* Lighter overlay - using white with higher opacity */}
-          <div className="absolute inset-0 bg-white/50"></div>
+          <div className="absolute inset-0 bg-white/90 z-0"></div>
         </div>
 
         {/* Content */}
