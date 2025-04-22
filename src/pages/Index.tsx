@@ -42,7 +42,7 @@ const Index = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-black/90 max-w-3xl font-medium mx-auto mb-12">
-            Powering the visibility, investability, and scalability of Africa's female-led ventures.
+            Powering the visibility, investability, and scalability of African female-led ventures.
           </p>
 
           {/* Single CTA Button */}
