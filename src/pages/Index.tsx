@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useBackgroundImage } from "@/hooks/useBackgroundImage";
 
 const Index = () => {
@@ -39,7 +40,7 @@ const Index = () => {
             <br />
             <span className="text-[#9bbfe0]">Founders Collective</span>
           </h1>
-
+          <div className="h-0.5 w-24 bg-[#d687b1] mx-auto my-8 animate-fade-in" style={{ animationDelay: '0.3s' }}></div>
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-black/90 max-w-3xl font-medium mx-auto mb-12">
             Powering the visibility, investability, and scalability of African female-led ventures.
@@ -53,7 +54,9 @@ const Index = () => {
           </Button>
         </div>
       </main>
+      <Footer/>
     </div>
+    
   );
 };
 

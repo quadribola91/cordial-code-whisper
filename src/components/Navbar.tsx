@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -19,11 +20,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
+          <Link to="/" className="flex items-center">
             <img
               src="/lovable-uploads/a6424192-2147-4502-9bc9-8fe2a87a7601.png"
               alt="AFFC Logo"
               className="h-8 w-auto"
             />
+           </Link>
           </div>
 
           {/* Mobile menu button */}
